@@ -1,11 +1,6 @@
 class PigLatinizer
-  attr_reader :text
   
-  def initialize(text)
-    @text = text
-  end
-  
-  def piglatin
+  def piglatinize
     text.split(" ").collect{|word| translate(word)}.join(" ")
   end
   
