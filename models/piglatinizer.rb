@@ -6,9 +6,8 @@ class Piglatinizer
   end
   
   def piglatinize
-    alpha = ('a'..'z').to_a
-    vowels = %w[a e i o u]
-    consonants = alpha - vowels
+    vow = %w[a e i o u]
+    con = ("a".."z").to_a - vow
 
   if vowels.include?(str[0])
     str + 'ay'
