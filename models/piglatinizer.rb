@@ -1,5 +1,10 @@
 class Piglatinizer
-  # attr_accessor
-  def initialize()
+  attr_reader :text
+  
+  def initialize(text)
+    @text = text
   end
+  
+  
+  
 end
