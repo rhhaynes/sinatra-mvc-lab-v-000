@@ -5,4 +5,7 @@ class Piglatinizer
     @text = text.gsub(/[^\S \r\n]/,"")
   end
   
+  def piglatinize
+  end
+  
 end
