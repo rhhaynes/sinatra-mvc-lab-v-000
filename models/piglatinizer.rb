@@ -5,6 +5,4 @@ class Piglatinizer
     @text = text
   end
   
-  
-  
 end
