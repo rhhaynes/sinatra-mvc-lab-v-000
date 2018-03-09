@@ -15,7 +15,7 @@ class Piglatinizer
     vow = %w[a e i o u]
     con = ("a".."z").to_a - vow
     
-    while con.include? str[0]
+    while con.include?(str[0])
       str += str[0]
       str = str[1..-1]
     end
