@@ -1,7 +1,11 @@
 class PigLatinizer
   
-  def piglatinize(text)
-    text.split(" ").collect{|word| translate(word)}.join(" ")
+  def piglatinize(word)
+    translate(word)
+  end
+  
+  def to_pig_latin(text)
+    text.split(" ").collect{|word| piglatinize(word)}.join(" ")
   end
   
   private
