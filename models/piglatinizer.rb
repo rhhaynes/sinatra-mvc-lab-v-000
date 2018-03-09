@@ -5,7 +5,7 @@ class Piglatinizer
     @text = text
   end
   
-  def piglatinize
+  def piglatin
     text.split(" ").collect{|word| translate(word)}.join(" ")
   end
   
@@ -17,12 +17,12 @@ class Piglatinizer
     
     if vow.include?(str[0])
       str + 'ay'
-    elsif consonants.include?(str[0]) && consonants.include?(str[1])
+    elsif con.include?(str[0]) && con.include?(str[1])
       str[2..-1] + str[0..1] + 'ay'
-    elsif consonants.include?(str[0])
+    elsif con.include?(str[0])
       str[1..-1] + str[0] + 'ay'
     else
-      str # return unchanged
+      str
     end
   end
   
